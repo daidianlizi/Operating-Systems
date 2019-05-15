@@ -1,0 +1,393 @@
+if [ x"" != x ] && [ ! -d pic ]; then \
+	  mkdir pic; \
+	else true; fi
+touch stamp-picdir
+CONFIG_FILES= CONFIG_HEADERS=config.h:./config.in /bin/sh ./config.status
+config.status: creating config.h
+config.status: executing default commands
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./regex.c -o pic/regex.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./regex.c -o regex.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./cplus-dem.c -o pic/cplus-dem.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./cplus-dem.c -o cplus-dem.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./cp-demangle.c -o pic/cp-demangle.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./cp-demangle.c -o cp-demangle.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./md5.c -o pic/md5.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./md5.c -o md5.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./sha1.c -o pic/sha1.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./sha1.c -o sha1.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./alloca.c -o pic/alloca.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./alloca.c -o alloca.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./argv.c -o pic/argv.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./argv.c -o argv.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./choose-temp.c -o pic/choose-temp.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./choose-temp.c -o choose-temp.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./concat.c -o pic/concat.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./concat.c -o concat.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./cp-demint.c -o pic/cp-demint.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./cp-demint.c -o cp-demint.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./crc32.c -o pic/crc32.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./crc32.c -o crc32.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./dyn-string.c -o pic/dyn-string.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./dyn-string.c -o dyn-string.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./fdmatch.c -o pic/fdmatch.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./fdmatch.c -o fdmatch.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./fibheap.c -o pic/fibheap.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./fibheap.c -o fibheap.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./filename_cmp.c -o pic/filename_cmp.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./filename_cmp.c -o filename_cmp.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./floatformat.c -o pic/floatformat.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./floatformat.c -o floatformat.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./fnmatch.c -o pic/fnmatch.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./fnmatch.c -o fnmatch.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./fopen_unlocked.c -o pic/fopen_unlocked.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./fopen_unlocked.c -o fopen_unlocked.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./getopt.c -o pic/getopt.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./getopt.c -o getopt.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./getopt1.c -o pic/getopt1.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./getopt1.c -o getopt1.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./getpwd.c -o pic/getpwd.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./getpwd.c -o getpwd.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./getruntime.c -o pic/getruntime.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./getruntime.c -o getruntime.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./hashtab.c -o pic/hashtab.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./hashtab.c -o hashtab.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./hex.c -o pic/hex.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./hex.c -o hex.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./lbasename.c -o pic/lbasename.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./lbasename.c -o lbasename.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./lrealpath.c -o pic/lrealpath.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./lrealpath.c -o lrealpath.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./make-relative-prefix.c -o pic/make-relative-prefix.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./make-relative-prefix.c -o make-relative-prefix.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./make-temp-file.c -o pic/make-temp-file.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./make-temp-file.c -o make-temp-file.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./objalloc.c -o pic/objalloc.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./objalloc.c -o objalloc.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./obstack.c -o pic/obstack.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./obstack.c -o obstack.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./partition.c -o pic/partition.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./partition.c -o partition.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./pexecute.c -o pic/pexecute.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./pexecute.c -o pexecute.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./physmem.c -o pic/physmem.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./physmem.c -o physmem.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./pex-common.c -o pic/pex-common.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./pex-common.c -o pex-common.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./pex-one.c -o pic/pex-one.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./pex-one.c -o pex-one.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./pex-unix.c -o pic/pex-unix.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./pex-unix.c -o pex-unix.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./safe-ctype.c -o pic/safe-ctype.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./safe-ctype.c -o safe-ctype.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./simple-object.c -o pic/simple-object.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./simple-object.c -o simple-object.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./simple-object-coff.c -o pic/simple-object-coff.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./simple-object-coff.c -o simple-object-coff.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./simple-object-elf.c -o pic/simple-object-elf.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./simple-object-elf.c -o simple-object-elf.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./simple-object-mach-o.c -o pic/simple-object-mach-o.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./simple-object-mach-o.c -o simple-object-mach-o.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./sort.c -o pic/sort.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./sort.c -o sort.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./spaces.c -o pic/spaces.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./spaces.c -o spaces.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./splay-tree.c -o pic/splay-tree.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./splay-tree.c -o splay-tree.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./strerror.c -o pic/strerror.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./strerror.c -o strerror.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./strsignal.c -o pic/strsignal.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./strsignal.c -o strsignal.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./unlink-if-ordinary.c -o pic/unlink-if-ordinary.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./unlink-if-ordinary.c -o unlink-if-ordinary.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./xatexit.c -o pic/xatexit.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./xatexit.c -o xatexit.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./xexit.c -o pic/xexit.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./xexit.c -o xexit.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./xmalloc.c -o pic/xmalloc.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./xmalloc.c -o xmalloc.o
+./xmalloc.c:112:28: warning: 'sbrk' is deprecated [-Wdeprecated-declarations]
+    first_break = (char *) sbrk (0);
+                           ^
+/usr/include/unistd.h:585:1: note: 'sbrk' has been explicitly marked deprecated here
+__deprecated __WATCHOS_PROHIBITED __TVOS_PROHIBITED
+^
+/usr/include/sys/cdefs.h:176:37: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((deprecated))
+                                       ^
+./xmalloc.c:124:26: warning: 'sbrk' is deprecated [-Wdeprecated-declarations]
+    allocated = (char *) sbrk (0) - first_break;
+                         ^
+/usr/include/unistd.h:585:1: note: 'sbrk' has been explicitly marked deprecated here
+__deprecated __WATCHOS_PROHIBITED __TVOS_PROHIBITED
+^
+/usr/include/sys/cdefs.h:176:37: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((deprecated))
+                                       ^
+./xmalloc.c:126:26: warning: 'sbrk' is deprecated [-Wdeprecated-declarations]
+    allocated = (char *) sbrk (0) - (char *) &environ;
+                         ^
+/usr/include/unistd.h:585:1: note: 'sbrk' has been explicitly marked deprecated here
+__deprecated __WATCHOS_PROHIBITED __TVOS_PROHIBITED
+^
+/usr/include/sys/cdefs.h:176:37: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((deprecated))
+                                       ^
+3 warnings generated.
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./xmemdup.c -o pic/xmemdup.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./xmemdup.c -o xmemdup.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./xstrdup.c -o pic/xstrdup.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./xstrdup.c -o xstrdup.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./xstrerror.c -o pic/xstrerror.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./xstrerror.c -o xstrerror.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./xstrndup.c -o pic/xstrndup.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./xstrndup.c -o xstrndup.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./mempcpy.c -o pic/mempcpy.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./mempcpy.c -o mempcpy.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./strverscmp.c -o pic/strverscmp.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./strverscmp.c -o strverscmp.o
+if [ x"" != x ]; then \
+	  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./setproctitle.c -o pic/setproctitle.o; \
+	else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./setproctitle.c -o setproctitle.o
+rm -f ./libiberty.a pic/./libiberty.a
+ar rc ./libiberty.a \
+	  ./regex.o ./cplus-dem.o ./cp-demangle.o ./md5.o ./sha1.o ./alloca.o ./argv.o ./choose-temp.o ./concat.o ./cp-demint.o ./crc32.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./filename_cmp.o ./floatformat.o ./fnmatch.o ./fopen_unlocked.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./pexecute.o ./physmem.o ./pex-common.o ./pex-one.o ./pex-unix.o ./safe-ctype.o ./simple-object.o ./simple-object-coff.o ./simple-object-elf.o ./simple-object-mach-o.o ./sort.o ./spaces.o ./splay-tree.o ./strerror.o ./strsignal.o ./unlink-if-ordinary.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o ./xstrndup.o  ./mempcpy.o ./strverscmp.o ./setproctitle.o
+ranlib ./libiberty.a
+if [ x"" != x ]; then \
+	  cd pic; \
+	  ar rc ./libiberty.a \
+	    ./regex.o ./cplus-dem.o ./cp-demangle.o ./md5.o ./sha1.o ./alloca.o ./argv.o ./choose-temp.o ./concat.o ./cp-demint.o ./crc32.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./filename_cmp.o ./floatformat.o ./fnmatch.o ./fopen_unlocked.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./pexecute.o ./physmem.o ./pex-common.o ./pex-one.o ./pex-unix.o ./safe-ctype.o ./simple-object.o ./simple-object-coff.o ./simple-object-elf.o ./simple-object-mach-o.o ./sort.o ./spaces.o ./splay-tree.o ./strerror.o ./strsignal.o ./unlink-if-ordinary.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o ./xstrndup.o  ./mempcpy.o ./strverscmp.o ./setproctitle.o; \
+	  ranlib ./libiberty.a; \
+	  cd ..; \
+	else true; fi
+echo ./regex.o ./cplus-dem.o ./cp-demangle.o ./md5.o ./sha1.o ./alloca.o ./argv.o ./choose-temp.o ./concat.o ./cp-demint.o ./crc32.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./filename_cmp.o ./floatformat.o ./fnmatch.o ./fopen_unlocked.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./pexecute.o ./physmem.o ./pex-common.o ./pex-one.o ./pex-unix.o ./safe-ctype.o ./simple-object.o ./simple-object-coff.o ./simple-object-elf.o ./simple-object-mach-o.o ./sort.o ./spaces.o ./splay-tree.o ./strerror.o ./strsignal.o ./unlink-if-ordinary.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o ./xstrndup.o > required-list
+make[3]: Nothing to be done for `all'.
+make[2]: Nothing to be done for `all'.
+Making info in doc
+make[3]: Nothing to be done for `info'.
+Making info in po
+make[3]: Nothing to be done for `info'.
+make[3]: Nothing to be done for `info-am'.
+/Library/Developer/CommandLineTools/usr/bin/make  all-recursive
+Making all in doc
+make[4]: Nothing to be done for `all'.
+Making all in po
+make[4]: Nothing to be done for `all'.
+rm -f bfd-tmp.h
+cp bfd-in3.h bfd-tmp.h
+/bin/sh ./../move-if-change bfd-tmp.h bfd.h
+rm -f bfd-tmp.h
+touch stmp-bfd-h
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT archive.lo -MD -MP -MF .deps/archive.Tpo -c -o archive.lo archive.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT archive.lo -MD -MP -MF .deps/archive.Tpo -c archive.c -o archive.o
+mv -f .deps/archive.Tpo .deps/archive.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT archures.lo -MD -MP -MF .deps/archures.Tpo -c -o archures.lo -DDEFAULT_VECTOR=bfd_elf32_i386_vec -DSELECT_VECS='&bfd_elf32_i386_vec,&i386coff_vec,&bfd_elf32_little_generic_vec,&bfd_elf32_big_generic_vec' -DSELECT_ARCHITECTURES='&bfd_i386_arch' ./archures.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT archures.lo -MD -MP -MF .deps/archures.Tpo -c -DDEFAULT_VECTOR=bfd_elf32_i386_vec "-DSELECT_VECS=&bfd_elf32_i386_vec,&i386coff_vec,&bfd_elf32_little_generic_vec,&bfd_elf32_big_generic_vec" "-DSELECT_ARCHITECTURES=&bfd_i386_arch" ./archures.c -o archures.o
+mv -f .deps/archures.Tpo .deps/archures.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT bfd.lo -MD -MP -MF .deps/bfd.Tpo -c -o bfd.lo bfd.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT bfd.lo -MD -MP -MF .deps/bfd.Tpo -c bfd.c -o bfd.o
+mv -f .deps/bfd.Tpo .deps/bfd.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT bfdio.lo -MD -MP -MF .deps/bfdio.Tpo -c -o bfdio.lo bfdio.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT bfdio.lo -MD -MP -MF .deps/bfdio.Tpo -c bfdio.c -o bfdio.o
+mv -f .deps/bfdio.Tpo .deps/bfdio.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT bfdwin.lo -MD -MP -MF .deps/bfdwin.Tpo -c -o bfdwin.lo bfdwin.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT bfdwin.lo -MD -MP -MF .deps/bfdwin.Tpo -c bfdwin.c -o bfdwin.o
+mv -f .deps/bfdwin.Tpo .deps/bfdwin.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT cache.lo -MD -MP -MF .deps/cache.Tpo -c -o cache.lo cache.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT cache.lo -MD -MP -MF .deps/cache.Tpo -c cache.c -o cache.o
+mv -f .deps/cache.Tpo .deps/cache.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT coffgen.lo -MD -MP -MF .deps/coffgen.Tpo -c -o coffgen.lo coffgen.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT coffgen.lo -MD -MP -MF .deps/coffgen.Tpo -c coffgen.c -o coffgen.o
+mv -f .deps/coffgen.Tpo .deps/coffgen.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT corefile.lo -MD -MP -MF .deps/corefile.Tpo -c -o corefile.lo corefile.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT corefile.lo -MD -MP -MF .deps/corefile.Tpo -c corefile.c -o corefile.o
+mv -f .deps/corefile.Tpo .deps/corefile.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT format.lo -MD -MP -MF .deps/format.Tpo -c -o format.lo format.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT format.lo -MD -MP -MF .deps/format.Tpo -c format.c -o format.o
+mv -f .deps/format.Tpo .deps/format.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT init.lo -MD -MP -MF .deps/init.Tpo -c -o init.lo init.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT init.lo -MD -MP -MF .deps/init.Tpo -c init.c -o init.o
+mv -f .deps/init.Tpo .deps/init.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT libbfd.lo -MD -MP -MF .deps/libbfd.Tpo -c -o libbfd.lo libbfd.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT libbfd.lo -MD -MP -MF .deps/libbfd.Tpo -c libbfd.c -o libbfd.o
+mv -f .deps/libbfd.Tpo .deps/libbfd.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT opncls.lo -MD -MP -MF .deps/opncls.Tpo -c -o opncls.lo opncls.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT opncls.lo -MD -MP -MF .deps/opncls.Tpo -c opncls.c -o opncls.o
+mv -f .deps/opncls.Tpo .deps/opncls.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT reloc.lo -MD -MP -MF .deps/reloc.Tpo -c -o reloc.lo reloc.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT reloc.lo -MD -MP -MF .deps/reloc.Tpo -c reloc.c -o reloc.o
+mv -f .deps/reloc.Tpo .deps/reloc.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT section.lo -MD -MP -MF .deps/section.Tpo -c -o section.lo section.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT section.lo -MD -MP -MF .deps/section.Tpo -c section.c -o section.o
+mv -f .deps/section.Tpo .deps/section.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT syms.lo -MD -MP -MF .deps/syms.Tpo -c -o syms.lo syms.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT syms.lo -MD -MP -MF .deps/syms.Tpo -c syms.c -o syms.o
+mv -f .deps/syms.Tpo .deps/syms.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT targets.lo -MD -MP -MF .deps/targets.Tpo -c -o targets.lo -DDEFAULT_VECTOR=bfd_elf32_i386_vec -DSELECT_VECS='&bfd_elf32_i386_vec,&i386coff_vec,&bfd_elf32_little_generic_vec,&bfd_elf32_big_generic_vec' -DSELECT_ARCHITECTURES='&bfd_i386_arch' ./targets.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT targets.lo -MD -MP -MF .deps/targets.Tpo -c -DDEFAULT_VECTOR=bfd_elf32_i386_vec "-DSELECT_VECS=&bfd_elf32_i386_vec,&i386coff_vec,&bfd_elf32_little_generic_vec,&bfd_elf32_big_generic_vec" "-DSELECT_ARCHITECTURES=&bfd_i386_arch" ./targets.c -o targets.o
+mv -f .deps/targets.Tpo .deps/targets.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT hash.lo -MD -MP -MF .deps/hash.Tpo -c -o hash.lo hash.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT hash.lo -MD -MP -MF .deps/hash.Tpo -c hash.c -o hash.o
+mv -f .deps/hash.Tpo .deps/hash.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT linker.lo -MD -MP -MF .deps/linker.Tpo -c -o linker.lo linker.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT linker.lo -MD -MP -MF .deps/linker.Tpo -c linker.c -o linker.o
+mv -f .deps/linker.Tpo .deps/linker.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT srec.lo -MD -MP -MF .deps/srec.Tpo -c -o srec.lo srec.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT srec.lo -MD -MP -MF .deps/srec.Tpo -c srec.c -o srec.o
+mv -f .deps/srec.Tpo .deps/srec.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT binary.lo -MD -MP -MF .deps/binary.Tpo -c -o binary.lo binary.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT binary.lo -MD -MP -MF .deps/binary.Tpo -c binary.c -o binary.o
+mv -f .deps/binary.Tpo .deps/binary.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT tekhex.lo -MD -MP -MF .deps/tekhex.Tpo -c -o tekhex.lo tekhex.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT tekhex.lo -MD -MP -MF .deps/tekhex.Tpo -c tekhex.c -o tekhex.o
+mv -f .deps/tekhex.Tpo .deps/tekhex.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT ihex.lo -MD -MP -MF .deps/ihex.Tpo -c -o ihex.lo ihex.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT ihex.lo -MD -MP -MF .deps/ihex.Tpo -c ihex.c -o ihex.o
+mv -f .deps/ihex.Tpo .deps/ihex.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT stabs.lo -MD -MP -MF .deps/stabs.Tpo -c -o stabs.lo stabs.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT stabs.lo -MD -MP -MF .deps/stabs.Tpo -c stabs.c -o stabs.o
+mv -f .deps/stabs.Tpo .deps/stabs.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT stab-syms.lo -MD -MP -MF .deps/stab-syms.Tpo -c -o stab-syms.lo stab-syms.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT stab-syms.lo -MD -MP -MF .deps/stab-syms.Tpo -c stab-syms.c -o stab-syms.o
+mv -f .deps/stab-syms.Tpo .deps/stab-syms.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT merge.lo -MD -MP -MF .deps/merge.Tpo -c -o merge.lo merge.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT merge.lo -MD -MP -MF .deps/merge.Tpo -c merge.c -o merge.o
+mv -f .deps/merge.Tpo .deps/merge.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT dwarf2.lo -MD -MP -MF .deps/dwarf2.Tpo -c -o dwarf2.lo -DDEBUGDIR=\"/usr/local/lib/debug\" ./dwarf2.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT dwarf2.lo -MD -MP -MF .deps/dwarf2.Tpo -c -DDEBUGDIR=\"/usr/local/lib/debug\" ./dwarf2.c -o dwarf2.o
+mv -f .deps/dwarf2.Tpo .deps/dwarf2.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT simple.lo -MD -MP -MF .deps/simple.Tpo -c -o simple.lo simple.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT simple.lo -MD -MP -MF .deps/simple.Tpo -c simple.c -o simple.o
+mv -f .deps/simple.Tpo .deps/simple.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT compress.lo -MD -MP -MF .deps/compress.Tpo -c -o compress.lo compress.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT compress.lo -MD -MP -MF .deps/compress.Tpo -c compress.c -o compress.o
+mv -f .deps/compress.Tpo .deps/compress.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT verilog.lo -MD -MP -MF .deps/verilog.Tpo -c -o verilog.lo verilog.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT verilog.lo -MD -MP -MF .deps/verilog.Tpo -c verilog.c -o verilog.o
+mv -f .deps/verilog.Tpo .deps/verilog.Plo
+/bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT elf32-i386.lo -MD -MP -MF .deps/elf32-i386.Tpo -c -o elf32-i386.lo elf32-i386.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_bfd_elf32_i386_vec -DHAVE_i386coff_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Werror -g -O2 -MT elf32-i386.lo -MD -MP -MF .deps/elf32-i386.Tpo -c elf32-i386.c -o elf32-i386.o
+elf32-i386.c:326:15: error: array index 42 is past the end of the array (which contains 34 elements) [-Werror,-Warray-bounds]
+      return &elf_howto_table[R_386_IRELATIVE];
+              ^               ~~~~~~~~~~~~~~~
+elf32-i386.c:37:1: note: array 'elf_howto_table' declared here
+static reloc_howto_type elf_howto_table[]=
+^
+1 error generated.
+make[4]: *** [elf32-i386.lo] Error 1
+make[3]: *** [all-recursive] Error 1
+make[2]: *** [all] Error 2
+make[1]: *** [all-bfd] Error 2
+make: *** [all] Error 2

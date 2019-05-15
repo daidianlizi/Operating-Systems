@@ -1,0 +1,61 @@
+
+entry.S,240
+.p2align 27,805
+.globl 29,822
+multiboot_header:multiboot_header30,846
+.globl 40,1127
+_start 41,1141
+.globl 45,1209
+entry:entry46,1222
+bmstart32:bmstart3262,1586
+.p2align 84,2341
+bmgdt:bmgdt85,2408
+bmgdtdesc:bmgdtdesc90,2575
+
+console.c,397
+static int panicked 14,270
+} cons;19,353
+printint(22,374
+cprintf(49,788
+panic(101,1660
+#define BACKSPACE 121,2018
+#define CRTPORT 122,2042
+static ushort *crt crt123,2064
+cgaputc(126,2136
+consputc(160,2803
+#define INPUT_BUF 177,3046
+} input;183,3176
+#define C(185,3186
+void microdelay(187,3225
+consoleintr(192,3261
+consoleread(234,4213
+consolewrite(272,4902
+consoleinit(287,5120
+
+main.c,83
+volatile char stack[stack11,205
+main(17,402
+pde_t entrypgdir[entrypgdir33,804
+
+printf.c,43
+putc(6,68
+printint(12,126
+printf(40,558
+
+string.c,127
+memset(5,43
+memcmp(16,228
+memmove(32,427
+memcpy(53,730
+strncmp(59,813
+strncpy(69,981
+safestrcpy(83,1192
+strlen(97,1362
+
+uart.c,111
+#define COM1 7,90
+static int uart;9,113
+uartinit(12,159
+uartputc(39,732
+uartgetc(51,889
+uartintr(61,1006

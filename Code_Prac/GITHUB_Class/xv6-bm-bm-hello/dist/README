@@ -1,0 +1,118 @@
+This is a small demo that takes parts of the xv6 kernel to demonstrate a simple
+boot into "Hello world" demo on real hardware.  The kernel can be booted with
+Grub (or any other boot loader that supports multiboot specification) and in
+Qemu. 
+
+
+We made several patches to make sure that xv6 boots on our machines. xv6 has
+most of the bare metal support in place (I guess, it worked in the past but is
+currently broken, hence we fixed it). 
+
+Overview
+-----------------------------------------------------------------------------
+
+At a hight level the kernel is compiled into a single file kernelmemfs, it then
+relies on te Grub to get loaded into memory.  Grub passes control to the entry
+point of the entry.S that does minimal platform initialization and passes
+control to main() in main.c.  main() initializes the console and the uart
+interface and prints "Hello world!". After that it speens forever doing
+nothing. 
+
+Run on bare metal
+-------------------------------------------------------------------------------
+
+Note: we tested on d820 machines in Emulab (they support serial line). CRG on a
+laptop didn't work (we would appreciate help!)
+
+1) Build the kernel
+
+   make
+
+2) Copy the kernel into the /boot folder
+
+   sudo cp kernelmemfs /boot/
+
+3) Add the following entry to the grub menu list. On a Linux machine this can
+be done by adding this to the /etc/grub.d/40_custom. You might adjust the
+root='hd0,2' to reflect where your Linux root is on disk, e.g., maybe it's on
+root='hd0,1'
+
+set timeout=30
+menuentry "xv6" {
+    insmod ext2
+    set root='hd0,2'
+    set kernel='/boot/kernelmemfs'
+    echo "Loading ${kernel}..."
+    multiboot ${kernel} ${kernel}
+    boot
+}
+
+4) Update grub
+
+  sudo sudo update-grub2
+
+5) Reboot and choose the xv6 entry. Make sure that you can see the grub menu
+list by editing /etc/default/grub making sure that GRUB_HIDDEN_TIMEOUT_QUIET is
+set to "false". 
+
+  GRUB_HIDDEN_TIMEOUT_QUIET=false
+
+Run on Qemu
+-------------------------------------------------------------------------------
+
+1) You can run this "Hello world" demo in Qemu on your local machine
+
+    make qemu
+
+Original xv6 text
+----------------------------------------------------------------------
+
+xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
+Version 6 (v6).  xv6 loosely follows the structure and style of v6,
+but is implemented for a modern x86-based multiprocessor using ANSI C.
+
+ACKNOWLEDGMENTS
+
+xv6 is inspired by John Lions's Commentary on UNIX 6th Edition (Peer
+to Peer Communications; ISBN: 1-57398-013-7; 1st edition (June 14,
+2000)). See also http://pdos.csail.mit.edu/6.828/2016/xv6.html, which
+provides pointers to on-line resources for v6.
+
+xv6 borrows code from the following sources:
+    JOS (asm.h, elf.h, mmu.h, bootasm.S, ide.c, console.c, and others)
+    Plan 9 (entryother.S, mp.h, mp.c, lapic.c)
+    FreeBSD (ioapic.c)
+    NetBSD (console.c)
+
+The following people have made contributions: Russ Cox (context switching,
+locking), Cliff Frey (MP), Xiao Yu (MP), Nickolai Zeldovich, and Austin
+Clements.
+
+We are also grateful for the bug reports and patches contributed by Silas
+Boyd-Wickizer, Anton Burtsev, Cody Cutler, Mike CAT, Tej Chajed, Nelson Elhage,
+Saar Ettinger, Alice Ferrazzi, Nathaniel Filardo, Peter Froehlich, Yakir Goaron,
+Shivam Handa, Bryan Henry, Jim Huang, Alexander Kapshuk, Anders Kaseorg,
+kehao95, Wolfgang Keller, Eddie Kohler, Austin Liew, Imbar Marinescu, Yandong
+Mao, Hitoshi Mitake, Carmi Merimovich, Joel Nider, Greg Price, Ayan Shafqat,
+Eldar Sehayek, Yongming Shen, Cam Tenny, Rafael Ubal, Warren Toomey, Stephen Tu,
+Pablo Ventura, Xi Wang, Keiichi Watanabe, Nicolas Wolovick, Grant Wu, Jindong
+Zhang, Icenowy Zheng, and Zou Chang Wei.
+
+The code in the files that constitute xv6 is
+Copyright 2006-2016 Frans Kaashoek, Robert Morris, and Russ Cox.
+
+ERROR REPORTS
+
+Please send errors and suggestions to Frans Kaashoek and Robert Morris
+(kaashoek,rtm@mit.edu). The main purpose of xv6 is as a teaching
+operating system for MIT's 6.828, so we are more interested in
+simplifications and clarifications than new features.
+
+BUILDING AND RUNNING XV6
+
+To build xv6 on an x86 ELF machine (like Linux or FreeBSD), run
+"make". On non-x86 or non-ELF machines (like OS X, even on x86), you
+will need to install a cross-compiler gcc suite capable of producing
+x86 ELF binaries. See http://pdos.csail.mit.edu/6.828/2016/tools.html.
+Then run "make TOOLPREFIX=i386-jos-elf-". Now install the QEMU PC
+simulator and run "make qemu".
